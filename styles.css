@@ -1,0 +1,62 @@
+:root {
+  font-family: 'Ubuntu', Inter, Avenir, Helvetica, sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #242424;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+p {
+  font-size: 2.5rem;
+}
+
+.content {
+  position: relative;
+  text-align: center;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .1;
+  z-index: -1;
+  background-image: url("code-solid.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nameplate {
+  margin-bottom: 7rem;
+  position: relative;
+}
+
+.name {
+  margin-bottom: 1rem;
+}
+
+.notice {
+  font-size: 2rem;
+}
